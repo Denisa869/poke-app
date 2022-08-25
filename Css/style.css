@@ -1,0 +1,237 @@
+/* stylesheet */
+    * {
+        padding-inline-start: 0;
+    }
+
+    body {
+        font-family: 'PT Sans', sans-serif;
+        background-image: url("../Images/backgroundImage2.jpg");
+        background-position: right center;
+    }
+
+    main {
+        height: 100%;
+    }
+
+    #logo-container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #logo-container a {
+        text-align: center;
+    }
+
+    ul {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+          
+    h1 {
+        margin-bottom: 4rem;
+    }
+
+    h1, h2, nav, .footerId {
+        text-align: center;
+    }
+    
+    h2, .footerId {
+        color: darkkhaki;
+    }
+
+    h6 {
+        display: inline-block;
+    }
+
+    li, a {
+        display: inline;
+        text-decoration: none;
+    }
+
+    .main-div {
+        display: table;
+        width: 50%;
+        margin: auto;
+    }
+        
+    .child-div {
+        display: table-cell;
+        padding: 16px;
+        border: 1px solid #226666;
+        border-left: 10px solid #ccc;
+        background: #eee;
+        margin: 5px;
+    }
+
+    .footerId {
+        position: absolute;
+        bottom:0;
+        width:100%;
+        height:60px;  
+    }
+
+    .pokemonType {
+        margin: 0px;
+    }
+
+    .searchBar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-div-about {
+        width: 50%;
+        margin: auto;
+    }
+    
+    .form {
+        display: grid;
+        justify-content: center;
+    }
+
+    .photo1 {
+        width: 20%;
+        height: 20%;
+    }
+
+    /* unvisited link */
+    a:link {
+    color: rgba(87, 81, 1, 0.938);
+    }
+  
+    /* visited link */
+    a:visited {
+        color: rgb(3, 139, 3);
+    }
+  
+    /* mouse over link */
+    a:hover {
+        color: rgb(77, 66, 32);
+    }
+
+    .main-div-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        width: 75%;
+        margin: auto;
+    }
+
+    .main-div-grid-news {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        width: 75%;
+        margin: auto;
+    }
+
+    .main-div-grid-about {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        width: 75%;
+        margin: auto;
+    }
+
+    .grid-area {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    main {
+        padding-bottom: 60px;
+    }
+
+    /*responsive*/
+
+    @media (max-width: 768px) {
+        .main-div-grid {
+            grid-template-columns: 1fr;
+            width: 25%;
+            margin: auto;
+            justify-content: center;
+            font-size: 10px;
+        }
+
+        .pokemonImg {
+            width: 175px;
+            height: auto;
+        }
+
+        .main-div-grid-news {
+            grid-template-columns: 1fr;
+            justify-content: center;
+            font-size: 10px;
+            width: 25%;
+            margin: auto;
+        }
+
+        .newsImg, .imgAbout {
+            width: 150px;
+            height: auto;
+            justify-content: center;
+        }
+
+        .main-div-grid-about {
+            grid-template-columns: 1fr;
+            justify-content: center;
+            font-size: 10px;
+            width: 25%;
+            margin: auto;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .main-div-grid {
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+        }
+
+        .main-div-grid-news {
+            grid-template-columns: 1fr;
+            justify-content: center;
+            width: 25%;
+            margin: auto;
+        }
+        .newsImg, .imgAbout {
+            width: auto;
+            height: 200px;
+            justify-content: center;
+        }
+
+        .main-div-grid-about {
+            grid-template-columns: 1fr;
+            justify-content: center;
+            width: 25%;
+            margin: auto;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .main-div-grid {
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+        }
+
+        .main-div-grid-news {
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            width: 25%;
+            margin: auto;
+        }
+    }
+
+    
