@@ -68,7 +68,7 @@
         padding: 16px;
         border: 1px solid #226666;
         border-left: 10px solid #ccc;
-        background: #eee;
+        background: linear-gradient(#FFD8AA, #FFF7AA, #B1DF95);
         margin: 5px;
     }
 
@@ -105,12 +105,12 @@
 
     /* unvisited link */
     a:link {
-    color: rgba(87, 81, 1, 0.938);
+    color: rgba(121, 113, 9, 0.938);
     }
-  
+
     /* visited link */
     a:visited {
-        color: rgb(3, 139, 3);
+    color: rgb(3, 139, 3);
     }
   
     /* mouse over link */
