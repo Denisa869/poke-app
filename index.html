@@ -25,254 +25,314 @@
     />
   </head>
   <body>
-    <div class="grid-area">
-        <header class="p-3 mb-3 border-bottom">
-          <!-- Pokémon logo -->
-        <div id="logo-container">
-          <a href="./index.html">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/269px-International_Pok%C3%A9mon_logo.svg.png"
-              alt="Pokémon Logo"
-              class="logo"
+    <header class="p-3 mb-5 border-bottom bg-header">
+      <!-- Navigator -->
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a href="/" class="navbar-brand nav-bar-logo"
+            ><img src="./Images/pokeapp.png" class="w-100" alt="Logo"
+          /></a>
+
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li>
+              <a href="./index.html" class="nav-link px-2 link-secondary"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="./Pages/pokedex.html" class="nav-link px-2 link-dark"
+                >Pokedex</a
+              >
+            </li>
+            <li>
+              <a href="./Pages/news.html" class="nav-link px-2 link-dark"
+                >News</a
+              >
+            </li>
+            <li>
+              <a href="./Pages/contact.html" class="nav-link px-2 link-dark"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a href="./Pages/aboutUs.html" class="nav-link px-2 link-dark"
+                >About us</a
+              >
+            </li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Search..."
+              aria-label="Search"
             />
-          </a>
+          </form>
+
+          <div class="dropdown text-end">
+            <a
+              href="#"
+              class="d-block link-dark text-decoration-none dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="./Images/pokeBall.png"
+                alt="mdo"
+                width="32"
+                height="32"
+                class="rounded-circle"
+              />
+            </a>
+            <ul class="dropdown-menu text-small">
+              <li><a class="dropdown-item" href="#">New project...</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
         </div>
-        <!-- Navigator -->
-          <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-              <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-              </a>
-      
-              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="./index.html" class="nav-link px-2 link-secondary">Home</a></li>
-                <li><a href="./Pages/pokedex.html" class="nav-link px-2 link-dark">Pokedex</a></li>
-                <li><a href="./Pages/news.html" class="nav-link px-2 link-dark">News</a></li>
-                <li><a href="./Pages/contact.html" class="nav-link px-2 link-dark">Contact</a></li>
-                <li><a href="./Pages/aboutUs.html" class="nav-link px-2 link-dark">About us</a></li>
-              </ul>
-      
-              <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-              </form>
-      
-              <div class="dropdown text-end">
-                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="./Images/pokeBall.png" alt="mdo" width="32" height="32" class="rounded-circle">
-                </a>
-                <ul class="dropdown-menu text-small">
-                  <li><a class="dropdown-item" href="#">New project...</a></li>
-                  <li><a class="dropdown-item" href="#">Settings</a></li>
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Sign out</a></li>
-                </ul>
+      </div>
+    </header>
+    <main>
+      <!-- Subtitle -->
+      <h2 class="mb-5">Latest News</h2>
+      <!-- Carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Images/clefairyCommotion.jpg" class="rounded mx-auto d-block w-50" alt="Clefairy Commotion">
+            <a href="https://bulbagarden.net/threads/294315">
+              <div class="carousel-caption d-none d-md-block mx-auto d-block w-50">
+                <h5>Clefairy Commotion event</h5>
+                <p>Pokémon GO celebrates the autumn harvest moon with a Clefairy Commotion event running on September 10th from 6-9pm.</p>
               </div>
-            </div>
+            </a>
           </div>
-        </header>
-      <main>
-        <!-- Title -->
-        <h1>PokeApp</h1>
-        <!-- Subtitle -->
-        <h2>Pokémon of the week</h2>
-        <!-- Content -->
-        <div class="main-div-grid">
-          <div class="child-div">
-            <div class="img-div">
-              <h3>Treecko #252</h3>
-              <br />
-              <img
-                class="pokemonImg"
-                src="./Images/treecko.png"
-                alt="Treecko"
-              />
-            </div>
-            <div class="hoverText">
-              <p>
-                This is a Grass-type Pokémon introduced in Generation III. It
-                evolves into Grovyle starting at level 16, which evolves into
-                Sceptile starting at level 36.
-              </p>
-            </div>
+          <div class="carousel-item">
+            <img src="./Images/seasonLight.jpg" class="rounded mx-auto d-block w-50" alt="Season Light">
+            <a href="https://bulbagarden.net/threads/294314">
+              <div class="carousel-caption d-none d-md-block mx-auto d-block w-50">
+                <h5>Psychic Spectacular event</h5>
+                <p>Returns to Pokémon GO from September 6th, more details for Deoxys Raid Day on September 11th also revealed</p>
+              </div>
+            </a>
           </div>
-          <div class="child-div">
-            <div class="img-div">
-              <h3>Grovyle #253</h3>
-              <img
-                class="pokemonImg"
-                src="./Images/grovyle.png"
-                alt="Grovyle"
-              />
+          <div class="carousel-item">
+            <img src="./Images/SeasonLightInkay.jpg" class="rounded mx-auto d-block w-50" alt="Ash's Gengar">
+            <a href="https://bulbagarden.net/threads/294278">
+            <div class="carousel-caption d-none d-md-block mx-auto d-block w-50">
+              <h5>Inkay limited research</h5>
+              <p>Event in Pokémon GO announced for September 3rd</p>
             </div>
-            <div class="hoverText">
-              <p>
-                This is a Grass-type Pokémon introduced in Generation III. It
-                evolves from Treecko starting at level 16 and evolves into
-                Sceptile starting at level 36. Grovyle is a bipedal Pokémon
-                similar in appearance to a theropod dinosaur. It is primarily
-                green with a red underside.
-              </p>
-            </div>
-          </div>
-          <div class="child-div">
-            <div class="img-div">
-              <h3>Sceptile #254</h3>
-              <img
-                class="pokemonImg"
-                src="./Images/sceptile.png"
-                alt="Sceptile"
-              />
-            </div>
-            <div class="hoverText">
-              <p>
-                This is a Grass-type Pokémon introduced in Generation III. It
-                evolves from Grovyle starting at level 36. It is the final form
-                of Treecko. Sceptile can Mega Evolve into Mega Sceptile using
-                the Sceptilite.
-              </p>
-            </div>
-          </div>
-          <div class="child-div">
-            <div class="img-div">
-              <h3>Torchic #255</h3>
-              <img
-                class="pokemonImg"
-                src="./Images/torchic.jpg"
-                alt="Torchic"
-              />
-            </div>
-            <div class="hoverText">
-              <p>
-                This is a Fire-type Pokémon introduced in Generation III. it
-                evolves into Combusken starting at level 16, which evolves into
-                Blaziken starting at level 36. Torchic is a small, chick Pokémon
-                with stubby, downy, yellow wings. Its body is covered with
-                orange feathers.
-              </p>
-            </div>
-          </div>
-          <div class="child-div">
-            <div class="img-div">
-              <h3>Combusken #256</h3>
-              <img
-                class="pokemonImg"
-                src="./Images/combusken.png"
-                alt="Combusken"
-              />
-            </div>
-            <div class="hoverText">
-              <p>
-                This is a dual-type Fire/Fighting Pokémon introduced in
-                Generation III. It evolves from Torchic starting at level 16 and
-                evolves into Blaziken starting at level 36. Combusken is a
-                bipedal, chicken-like Pokémon. Most of Combusken's upper body is
-                yellow, while most of the lower body is orange.
-              </p>
-            </div>
-          </div>
-          <div class="child-div">
-            <div class="img-div">
-              <h3>Blaziken #257</h3>
-              <img
-                class="pokemonImg"
-                src="./Images/blaziken.png"
-                alt="Blaziken"
-              />
-            </div>
-            <div class="hoverText">
-              <p>
-                This is a dual-type Fire/Fighting Pokémon introduced in
-                Generation III. It evolves from Combusken starting at level 36.
-                It is the final form of Torchic. Blaziken can Mega Evolve into
-                Mega Blaziken using the Blazikenite. Blaziken is a bipedal,
-                chicken-like Pokémon.
-              </p>
-            </div>
-          </div>
-          <div class="child-div">
-            <div class="img-div">
-              <h3>Mudkip #258</h3>
-              <img class="pokemonImg" src="./Images/mudkip.jpg" alt="Mudkip" />
-            </div>
-            <div class="hoverText">
-              <p>
-                This is a Water-type Pokémon introduced in Generation III. It
-                evolves into Marshtomp starting at level 16, which evolves into
-                Swampert starting at level 36. Mudkip is a small, amphibious,
-                quadrupedal Pokémon. It has a blue body with a light-blue
-                underside.
-              </p>
-            </div>
-          </div>
-          <div class="child-div">
-            <div class="img-div">
-              <h3>Marshtomp #259</h3>
-              <img
-                class="pokemonImg"
-                src="./Images/marshtomp.jpg"
-                alt="Marshtomp"
-              />
-            </div>
-            <div class="hoverText">
-              <p>
-                This is a dual-type Water/Ground Pokémon introduced in
-                Generation III. It evolves from Mudkip starting at level 16 and
-                evolves into Swampert starting at level 36. Marshtomp is an
-                amphibious, bipedal Pokémon. Its body is primarily light-blue
-                with a lighter shade of blue for its underside and an orange
-                belly.
-              </p>
-            </div>
-          </div>
-          <div class="child-div">
-            <div class="img-div">
-              <h3>Swampert #260</h3>
-              <img
-                class="pokemonImg"
-                src="./Images/swampert.jpg"
-                alt="Swampert"
-              />
-            </div>
-            <div class="hoverText">
-              <p>
-                This is a dual-type Water/Ground Pokémon introduced in
-                Generation III. It evolves from Marshtomp starting at level 36.
-                It is the final form of Mudkip. Swampert can Mega Evolve into
-                Mega Swampert using the Swampertite.
-              </p>
-            </div>
+            </a>
           </div>
         </div>
-      </main>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Subtitle -->
+      <h2 class="mb-5 mt-5" >Pokémon of the week</h2>
+      <!-- Content -->
+      <div class="main-div-grid">
+        <div class="child-div">
+          <div class="img-div">
+            <h3>Treecko #252</h3>
+            <br />
+            <img class="pokemonImg" src="./Images/treecko.png" alt="Treecko" />
+          </div>
+          <div class="hoverText">
+            <p>
+              This is a Grass-type Pokémon introduced in Generation III. It
+              evolves into Grovyle starting at level 16, which evolves into
+              Sceptile starting at level 36.
+            </p>
+          </div>
+        </div>
+        <div class="child-div">
+          <div class="img-div">
+            <h3>Grovyle #253</h3>
+            <img class="pokemonImg" src="./Images/grovyle.png" alt="Grovyle" />
+          </div>
+          <div class="hoverText">
+            <p>
+              This is a Grass-type Pokémon introduced in Generation III. It
+              evolves from Treecko starting at level 16 and evolves into
+              Sceptile starting at level 36. Grovyle is a bipedal Pokémon
+              similar in appearance to a theropod dinosaur. It is primarily
+              green with a red underside.
+            </p>
+          </div>
+        </div>
+        <div class="child-div">
+          <div class="img-div">
+            <h3>Sceptile #254</h3>
+            <img
+              class="pokemonImg"
+              src="./Images/sceptile.png"
+              alt="Sceptile"
+            />
+          </div>
+          <div class="hoverText">
+            <p>
+              This is a Grass-type Pokémon introduced in Generation III. It
+              evolves from Grovyle starting at level 36. It is the final form of
+              Treecko. Sceptile can Mega Evolve into Mega Sceptile using the
+              Sceptilite.
+            </p>
+          </div>
+        </div>
+        <div class="child-div">
+          <div class="img-div">
+            <h3>Torchic #255</h3>
+            <img class="pokemonImg" src="./Images/torchic.jpg" alt="Torchic" />
+          </div>
+          <div class="hoverText">
+            <p>
+              This is a Fire-type Pokémon introduced in Generation III. it
+              evolves into Combusken starting at level 16, which evolves into
+              Blaziken starting at level 36. Torchic is a small, chick Pokémon
+              with stubby, downy, yellow wings. Its body is covered with orange
+              feathers.
+            </p>
+          </div>
+        </div>
+        <div class="child-div">
+          <div class="img-div">
+            <h3>Combusken #256</h3>
+            <img
+              class="pokemonImg"
+              src="./Images/combusken.png"
+              alt="Combusken"
+            />
+          </div>
+          <div class="hoverText">
+            <p>
+              This is a dual-type Fire/Fighting Pokémon introduced in Generation
+              III. It evolves from Torchic starting at level 16 and evolves into
+              Blaziken starting at level 36. Combusken is a bipedal,
+              chicken-like Pokémon. Most of Combusken's upper body is yellow,
+              while most of the lower body is orange.
+            </p>
+          </div>
+        </div>
+        <div class="child-div">
+          <div class="img-div">
+            <h3>Blaziken #257</h3>
+            <img
+              class="pokemonImg"
+              src="./Images/blaziken.png"
+              alt="Blaziken"
+            />
+          </div>
+          <div class="hoverText">
+            <p>
+              This is a dual-type Fire/Fighting Pokémon introduced in Generation
+              III. It evolves from Combusken starting at level 36. It is the
+              final form of Torchic. Blaziken can Mega Evolve into Mega Blaziken
+              using the Blazikenite. Blaziken is a bipedal, chicken-like
+              Pokémon.
+            </p>
+          </div>
+        </div>
+        <div class="child-div">
+          <div class="img-div">
+            <h3>Mudkip #258</h3>
+            <img class="pokemonImg" src="./Images/mudkip.jpg" alt="Mudkip" />
+          </div>
+          <div class="hoverText">
+            <p>
+              This is a Water-type Pokémon introduced in Generation III. It
+              evolves into Marshtomp starting at level 16, which evolves into
+              Swampert starting at level 36. Mudkip is a small, amphibious,
+              quadrupedal Pokémon. It has a blue body with a light-blue
+              underside.
+            </p>
+          </div>
+        </div>
+        <div class="child-div">
+          <div class="img-div">
+            <h3>Marshtomp #259</h3>
+            <img
+              class="pokemonImg"
+              src="./Images/marshtomp.jpg"
+              alt="Marshtomp"
+            />
+          </div>
+          <div class="hoverText">
+            <p>
+              This is a dual-type Water/Ground Pokémon introduced in Generation
+              III. It evolves from Mudkip starting at level 16 and evolves into
+              Swampert starting at level 36. Marshtomp is an amphibious, bipedal
+              Pokémon. Its body is primarily light-blue with a lighter shade of
+              blue for its underside and an orange belly.
+            </p>
+          </div>
+        </div>
+        <div class="child-div">
+          <div class="img-div">
+            <h3>Swampert #260</h3>
+            <img
+              class="pokemonImg"
+              src="./Images/swampert.jpg"
+              alt="Swampert"
+            />
+          </div>
+          <div class="hoverText">
+            <p>
+              This is a dual-type Water/Ground Pokémon introduced in Generation
+              III. It evolves from Marshtomp starting at level 36. It is the
+              final form of Mudkip. Swampert can Mega Evolve into Mega Swampert
+              using the Swampertite.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">About</a>
+          </li>
+        </ul>
+        <p class="text-center text-muted">© 2022 Company, Inc</p>
+      </footer>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"
+      ></script>
     </div>
-  </div>
-  <!-- Footer -->
-  <div class="container">
-    <footer class="py-3 my-4">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-muted">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-muted">Features</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-muted">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-muted">FAQs</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-muted">About</a>
-        </li>
-      </ul>
-      <p class="text-center text-muted">© 2022 Company, Inc</p>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
