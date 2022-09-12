@@ -1,0 +1,126 @@
+* {
+  padding-inline-start: 0;
+  margin: 0;
+
+  body {
+    font-family: "PT Sans", sans-serif;
+    background-image: url("../Images/backgroundImage2.jpg");
+    background-position: right center;
+
+    header {
+      background: #f1f3e8;
+      .container {
+        div {
+          .nav-bar-logo {
+            width: 150px;
+          }
+        }
+        ul {
+          margin-block-start: 0;
+          margin-block-end: 0;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+        }
+      }
+    }
+
+    main {
+      padding-bottom: 60px;
+      height: 100%;
+      h2 {
+        text-align: center;
+      }
+
+      h2 {
+        color: darkkhaki;
+      }
+
+      .main-div-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+        width: 75%;
+        margin: auto;
+
+        /*responsive*/
+        @media (max-width: 768px) {
+          grid-template-columns: 1fr;
+          width: 25%;
+          margin: auto;
+          justify-content: center;
+          font-size: 13px;
+        }
+
+        @media (min-width: 768px) {
+          grid-template-columns: 1fr 1fr;
+          justify-content: center;
+        }
+        @media (min-width: 1024px) {
+          grid-template-columns: 1fr 1fr 1fr;
+          justify-content: center;
+        }
+
+        .child-div {
+          display: table-cell;
+          padding: 16px;
+          border: 1px solid #226666;
+          border-left: 10px solid #ccc;
+          background: linear-gradient(#ffd8aa, #fff7aa, #b1df95);
+          margin: 5px;
+          position: relative;
+          max-width: 500px;
+
+          /*hover*/
+          &:hover {
+            .hoverText {
+              visibility: visible;
+              opacity: 1;
+            }
+
+            .img-div {
+              opacity: 0.3;
+            }
+          }
+          .hoverText {
+            /* (C1) DIMENSIONS */
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+
+            /* (C2) POSITION */
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+
+            /* (C3) COLORS */
+            background-color: #beb22a75;
+            color: #312f2c;
+
+            visibility: none;
+            opacity: 0;
+            transition: opacity 0.23s;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+    /*responsive*/
+    p {
+      @media (max-width: 768px) {
+        margin-bottom: 0px;
+      }
+      @media (min-width: 1024px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 20px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+
