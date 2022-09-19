@@ -1,0 +1,36 @@
+
+.child-div {
+
+    &:hover {
+        .hoverText {
+        visibility: visible;
+        opacity: 1;
+        }
+
+        .img-div {
+        opacity: 0.3;
+        }
+    }
+    .hoverText {
+        /* (C1) DIMENSIONS */
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+
+        /* (C2) POSITION */
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+
+        /* (C3) COLORS */
+        background-color: #beb22a75;
+        color: #312f2c;
+
+        visibility: none;
+        opacity: 0;
+        transition: opacity 0.23s;
+        display: flex;
+        align-items: center;
+    }
+}
