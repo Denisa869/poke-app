@@ -75,6 +75,19 @@
   max-width: 500px;
 }
 
+.grid-h1 {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 20px;
+  width: 75%;
+  margin: auto;
+  padding: 100px 100px;
+  background-color: rgba(255, 228, 196, 0.315);
+}
+
 header {
   background: #f1f3e8;
 }
@@ -122,6 +135,11 @@ header .container ul {
 main {
   padding-bottom: 60px;
   height: 100%;
+}
+main h1 {
+  text-align: center;
+  color: darkkhaki;
+  padding-bottom: 50px;
 }
 main h2 {
   text-align: center;
