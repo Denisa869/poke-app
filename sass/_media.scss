@@ -31,7 +31,7 @@ body {
 
         .main-div-grid-about {
             grid-template-columns: 1fr;
-            justify-content: center;
+            justify-items: center;
             font-size: 13px;
             width: 80%;
             margin: auto;
@@ -61,7 +61,7 @@ body {
         }
         .main-div-grid-about {
             grid-template-columns: 1fr;
-            justify-content: center;
+            justify-items: center;
             width: 60%;
             margin: auto;
         }
@@ -82,6 +82,13 @@ body {
             padding-right: 10px;
             font-size: 20px;
             line-height: 1.5;
+        }
+
+        .main-div-grid-about {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            width: 40%;
+            margin: auto;
         }
     }
 }
