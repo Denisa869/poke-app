@@ -9,6 +9,29 @@ body {
             font-size: 13px;
         }
 
+        .carousel {
+            margin-left: 13px;
+        }
+
+        .p-hidden-md {
+            display: none
+        }
+
+        a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+
+        .carousel {
+            width: 92%!important;
+            display: flex;
+        }
+
+        .grid-h1 {
+            padding: 18px;
+            text-align: center;
+        }
+
         .pokemonImg {
             width: 175px;
             height: auto;
@@ -42,7 +65,7 @@ body {
         }
     }
 
-    @media (min-width: 768px)  {
+    @media (min-width: 769px)  {
         .main-div-grid {
             grid-template-columns: 1fr 1fr;
             justify-content: center;
@@ -52,6 +75,16 @@ body {
             justify-content: center;
             width: 25%;
             margin: auto;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        
+
+        .grid-h1 {
+            padding: 40px;
+            text-align: center;
         }
         .newsImg,
         .imgAbout {
@@ -76,6 +109,10 @@ body {
             justify-content: center;
             width: 25%;
             margin: auto;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
         }
         p {
             padding-left: 10px;
