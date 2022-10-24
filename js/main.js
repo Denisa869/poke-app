@@ -2,6 +2,7 @@
 alert("Welcome to my first Javascript Project");
 
 let yourName = prompt("What is your name?");
+let count = 0;
 
 //ciclo//
 while (!yourName) {
@@ -9,9 +10,12 @@ while (!yourName) {
 
     yourName = prompt("What is your name?");
 }
+for (i = 1; i <= yourName.length; i++) {
+    count++
+}
 
 let knowMore = prompt(
-    "Hello " + yourName + ", would you like to know more about this new program?"
+    "Hello " + yourName + ", your name has "+ count + " characters, would you like to know more about this new program?"
 );
 
 console.log(yourName);
