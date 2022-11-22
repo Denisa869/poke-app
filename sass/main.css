@@ -74,6 +74,22 @@
   position: relative;
   max-width: 500px;
 }
+.main-div-grid-about .listContDiv {
+  min-height: 250px;
+  background-color: #fff7aa;
+  display: table-cell;
+  padding: 16px;
+  border: 1px solid #226666;
+  border-left: 10px solid #ccc;
+  margin: 5px;
+  position: relative;
+}
+.main-div-grid-about .listContDiv span {
+  font-weight: bold;
+}
+.main-div-grid-about .listContDiv .listUl {
+  margin-top: 20px;
+}
 
 .grid-h1 {
   display: grid;
