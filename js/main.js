@@ -119,7 +119,7 @@ const newsletter = JSON.parse(localStorage.getItem("usuarios") || []).filter(
   (usuario) => usuario.newsletter
 );
 
-if (newsletter) {
+if (newsletter && divContainer) {
   const listContainer = document.createElement("div");
 
   const list = document.createElement("ul");
