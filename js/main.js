@@ -74,7 +74,7 @@ const headers = new Headers()
 headers.set('permissions-policy',  'interest-cohort=()')
 
 const formContact = document.querySelector("#form-contact");
-const inlineFormInput = formContact.querySelector("#form-contact input[type=text]");
+const inlineFormInput = formContact.querySelector("#inlineFormInput");
 const inputEmail = formContact.querySelector("#inputEmail4");
 const inputAddressA = formContact.querySelector("#inputAddress");
 const inputAddressB = formContact.querySelector("#inputAddress2");
@@ -82,10 +82,6 @@ const inputCity = formContact.querySelector("#inputCity");
 const inputZip = formContact.querySelector("#inputZip");
 const newsletterCB = formContact.querySelector("#gridCheck");
 const divContainer = document.querySelector(".main-div-grid-about");
-
-inlineFormInput.addEventListener("input", (event) => {
-  // console.log(event)
-});
 
 const usuarios =  JSON.parse(localStorage.getItem("usuarios")) || [];
 
