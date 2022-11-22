@@ -70,15 +70,8 @@
 //   }
 
 //Local Storage//
-
-const userLS = localStorage.getItem("usuarios");
-// let usuario = ''
-
-// if (userLS) {
-//   usuario = userLS
-// }
-
-//Eventos del formulario//
+const headers = new Headers()
+headers.set('permissions-policy',  'interest-cohort=()')
 
 const formContact = document.querySelector("#form-contact");
 const inlineFormInput = formContact.querySelector("#form-contact input[type=text]");
