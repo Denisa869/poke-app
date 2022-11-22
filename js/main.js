@@ -70,8 +70,8 @@
 //   }
 
 //Local Storage//
-const headers = new Headers()
-headers.set('permissions-policy',  'interest-cohort=()')
+const headers = new Headers();
+headers.set("permissions-policy", "interest-cohort=()");
 
 const formContact = document.querySelector("#form-contact");
 const inlineFormInput = formContact.querySelector("#inlineFormInput");
@@ -83,7 +83,7 @@ const inputZip = formContact.querySelector("#inputZip");
 const newsletterCB = formContact.querySelector("#gridCheck");
 const divContainer = document.querySelector(".main-div-grid-about");
 
-const usuarios =  JSON.parse(localStorage.getItem("usuarios")) || [];
+const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
 formContact.addEventListener("submit", (event) => {
   event.preventDefault(); //frena el comportamiento por defecto//
@@ -104,7 +104,7 @@ formContact.addEventListener("submit", (event) => {
     address2: inputAddressB.value,
     city: inputCity.value,
     zip: inputZip.value,
-    newsletter: newsletterCB.checked // checkbox
+    newsletter: newsletterCB.checked, // checkbox
   };
   usuarios.push(user);
   localStorage.setItem("usuarios", JSON.stringify(usuarios)); //convertir el objeto en string//
@@ -112,23 +112,22 @@ formContact.addEventListener("submit", (event) => {
   // console.log(user)
 });
 
-
-const newsletter = JSON.parse(localStorage.getItem("usuarios")).filter(
+const newsletter = JSON.parse(localStorage.getItem("usuarios") || []).filter(
   (usuario) => usuario.newsletter
 );
 
 if (newsletter) {
-  const listContainer = document.createElement('div');
+  const listContainer = document.createElement("div");
 
   const list = document.createElement("ul");
 
-  const listTitle = document.createElement('span');
-  listTitle.textContent = 'Usuarios suscritos al newsletter de pokemon'
+  const listTitle = document.createElement("span");
+  listTitle.textContent = "Usuarios suscritos al newsletter de pokemon";
 
   //agregar una clase a los nuevos elementos//
-  listContainer.className = 'listContDiv' 
-  listTitle.className = 'listDiv'
-  list.className = 'listUl'
+  listContainer.className = "listContDiv";
+  listTitle.className = "listDiv";
+  list.className = "listUl";
 
   //Agregando una lista de usuarios si quieren suscribirse al newsletter//
 
@@ -139,7 +138,7 @@ if (newsletter) {
   }
 
   //adjuntar elementos
-  listContainer.appendChild(listTitle)
-  listContainer.appendChild(list)
-  divContainer.appendChild(listContainer)
+  listContainer.appendChild(listTitle);
+  listContainer.appendChild(list);
+  divContainer.appendChild(listContainer);
 }
