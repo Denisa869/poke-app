@@ -6,20 +6,29 @@ formPokedex.addEventListener("submit", (e) => {
   e.preventDefault(); //frena el comportamiento por defecto//
   const value = searchInput.value;
 
+  let found = false
+
   for (child of pokemonID.children) {
-    const name = child.children[1].children[1].innerText;
-    if (name.toUpperCase() == value.toUpperCase() && value !== '') {
-      console.log('llegó al if ')
+    const name = child.children[1].children[1].textContent;
+    if (name.toLowerCase().trim()  === value.toLowerCase().trim()) {
+      console.log('llegó al if ', name.toUpperCase() == value.toUpperCase())
       child.style.display = "grid";
-    } else {
-      console.log('llegó ')
-      swal("Error", "Pokémon not found", 'error')  
+      found = true
+    } else if (value !== '') {
+      console.log('llegó al else', name.toUpperCase() == value.toUpperCase())
       child.style.display = "none";
     }
+
     if (value === "") {
       child.style.display = "grid";
+      found = true
+    }
+
+    if (!found) {
+      swal("Error", "Pokémon not found", 'error')  
     }
   }
+
 });
 
 let users = [];
