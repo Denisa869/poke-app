@@ -23,12 +23,11 @@ formPokedex.addEventListener("submit", (e) => {
       child.style.display = "grid";
       found = true
     }
-
-    if (!found) {
-      swal("Error", "Pokémon not found", 'error')  
-    }
   }
-
+  if (!found) {
+    swal("Error", "Pokémon not found", 'error')  
+  }
+  found = false
 });
 
 let users = [];
