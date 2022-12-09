@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Your definitive Pokémon portal with the latest news, forums, Pokémon encyclopedia, and much more." >
     <meta name="keywords" content="Pokemon, Pokémon, encyclopedia pokémon, pikachu, charizard, initials, hoenn, ash">
+
+    <!-- Javascript-->
+    <script src='../js/pokedex.js' defer></script>
+    
     <!--CSS Link-->
     <link rel="stylesheet" href="../sass/main.css" />
     <!-- Favicon-->
@@ -67,28 +71,20 @@
             </li>
           </ul>
 
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-            <input
-              type="search"
-              class="form-control"
-              placeholder="Find more"
-              aria-label="Search"
-            />
-          </form>
-
+          
           <div class="dropdown text-end">
             <a
-              href="#"
-              class="d-block link-dark text-decoration-none dropdown-toggle"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+            href="#"
+            class="d-block link-dark text-decoration-none dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
             >
               <img
-                src="../Images/pokeBall.png"
-                alt="mdo"
-                width="32"
-                height="32"
-                class="rounded-circle"
+              src="../Images/pokeBall.png"
+              alt="mdo"
+              width="32"
+              height="32"
+              class="rounded-circle"
               />
             </a>
             <ul class="dropdown-menu text-small">
@@ -103,195 +99,37 @@
       </div>
     </header>
     <main>
+      <!--Welcome h1-->
+      <div class="grid-h1">
+        <div class="child-div">
+          <h1>List of generation I Pokémon</h1>
+          <p>The following list details the 151 Pokémon of Generation I in order of their National Pokédex number. 
+            The first Pokémon, Bulbasaur, is number 001 and the last, Mew, is number 151. 
+            Alternate forms that result in type changes are included for convenience. Mega evolutions and regional forms are included on the pages for the generation in which they were introduced. MissingNo. is also on this list.
+          </p>
+        </div>
+      </div>
+      <br>
+      
       <!-- Subtitle -->
       <h2 class="mb-5">Pokedex</h2>
+      
+      <div class ='container'>
+        <form class="col-3 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input
+            type="search"
+            class="form-control"
+            placeholder="Find more"
+            aria-label="Search"
+            id="searchInput"
+          />
+        </form>
+      </div>
+      <br>
+    
       <!-- Content -->
-      <div class="main-div-grid">
-        <div class="child-div">
-          <h3 class="pokemonType">Bulbasaur #001</h3>
-          <img
-            class="pokemonImg"
-            src="../Images/bulbasaur.png"
-            alt="Bulbasaur"
-          />
-          <p>
-            This is a dual-type Grass/Poison Pokémon introduced in Generation I.
-            It evolves into Ivysaur starting at level 16, which evolves into
-            Venusaur starting at level 32. Bulbasaur is a small, quadrupedal
-            amphibian Pokémon that has blue-green skin with darker patches. It
-            has red eyes with white pupils, pointed, ear-like structures on top
-            of its head, and a short, blunt snout with a wide mouth. A pair of
-            small, pointed teeth are visible in the upper jaw when its mouth is
-            open. Each of its thick legs ends with three sharp claws. On
-            Bulbasaur's back is a green plant bulb, which is grown from a seed
-            planted there at birth. The bulb also conceals two slender,
-            tentacle-like vines and provides it with energy through
-            photosynthesis as well as from the nutrient-rich seeds contained
-            within.
-          </p>
-        </div>
-        <div class="child-div">
-          <h3 class="pokemonType">Ivysaur #002</h3>
-          <img class="pokemonImg" src="../Images/ivysaur.png" alt="Ivysaur" />
-          <p>
-            This is a dual-type Grass/Poison Pokémon introduced in Generation I.
-            It evolves from Bulbasaur starting at level 16 and evolves into
-            Venusaur starting at level 32. Ivysaur is a quadrupedal amphibian
-            Pokémon that has blue-green skin with darker patches. On top of its
-            head are pointed ears with black insides and it has narrow red eyes.
-            Ivysaur has a short, rounded snout with a wide mouth and two pointed
-            teeth in its upper jaw. Each of its feet has three claws on them.
-            The bulb on its back has bloomed into a large pink bud. A short
-            brown trunk surrounded by leafy green fronds supports the bud.
-          </p>
-        </div>
-        <div class="child-div">
-          <h3 class="pokemonType">Venusaur #003</h3>
-          <img class="pokemonImg" src="../Images/venusaur.png" alt="Venusaur" />
-          <p>
-            This is a dual-type Grass/Poison Pokémon introduced in Generation I.
-            It evolves from Ivysaur starting at level 32. It is the final form
-            of Bulbasaur. Venusaur is a squat, quadrupedal amphibian Pokémon
-            with bumpy, blue-green skin. It has small, circular red eyes; a
-            short, blunt snout; and a wide mouth with two pointed teeth in the
-            upper jaw and four in the lower jaw. On top of its head are small,
-            pointed ears with reddish pink insides. It has three clawed toes on
-            each foot. The bud on its back has bloomed into a large pink,
-            white-spotted flower. The flower is supported by a thick, brown
-            trunk surrounded by green fronds. A female Venusaur will have a seed
-            in the center of its flower.
-          </p>
-        </div>
-        <div class="child-div">
-          <h3 class="pokemonType">Charmander #004</h3>
-          <img
-            class="pokemonImg"
-            src="../Images/charmander.png"
-            alt="Charmander"
-          />
-          <p>
-            This is a Fire-type Pokémon introduced in Generation I. It evolves
-            into Charmeleon starting at level 16, which evolves into Charizard
-            starting at level 36. Charmander is a bipedal, reptilian Pokémon
-            with a primarily orange body and blue eyes. Its underside from the
-            chest down and the soles of its feet are cream-colored. It has two
-            small fangs visible in its upper jaw and two smaller fangs in its
-            lower jaw. A fire burns at the tip of this Pokémon's slender tail
-            and has blazed there since Charmander's birth. The flame can be used
-            as an indication of Charmander's health and mood, burning brightly
-            when the Pokémon is strong, weakly when it is exhausted, wavering
-            when it is happy, and blazing when it is enraged. It is said that
-            Charmander dies if its flame goes out. However, if the Pokémon is
-            healthy, the flame will continue to burn even if it gets a bit wet
-            and is said to steam in the rain.
-          </p>
-        </div>
-        <div class="child-div">
-          <h3 class="pokemonType">Charmeleon #005</h3>
-          <img
-            class="pokemonImg"
-            src="../Images/charmeleon.png"
-            alt="Charmeleon"
-          />
-          <p>
-            This is a Fire-type Pokémon introduced in Generation I. It evolves
-            from Charmander starting at level 16 and evolves into Charizard
-            starting at level 36. Charmeleon is a bipedal, reptilian Pokémon. It
-            has dark red scales and a cream underside from the chest down. It
-            has blue eyes and a long snout with a slightly hooked tip. On the
-            back of its head is a single horn-like protrusion. It has relatively
-            long arms with three sharp claws. Its short legs have plantigrade
-            feet with three claws and cream-colored soles. The tip of its long,
-            powerful tail has a flame burning on it. The temperature rises to
-            unbearable levels if Charmeleon swings its tail.
-          </p>
-        </div>
-        <div class="child-div">
-          <h3 class="pokemonType">Charizard #006</h3>
-          <img
-            class="pokemonImg"
-            src="../Images/charizard.png"
-            alt="Charizard"
-          />
-          <p>
-            This is a dual-type Fire/Flying Pokémon introduced in Generation I.
-            It evolves from Charmeleon starting at level 36. It is the final
-            form of Charmander. Charizard is a draconic, bipedal Pokémon. It is
-            primarily orange with a cream underside from the chest to the tip of
-            its tail. It has a long neck, small blue eyes, slightly raised
-            nostrils, and two horn-like structures protruding from the back of
-            its rectangular head. There are two fangs visible in the upper jaw
-            when its mouth is closed. Two large wings with blue-green undersides
-            sprout from its back, and a horn-like appendage juts out from the
-            top of the third joint of each wing. A single wing-finger is visible
-            through the center of each wing membrane. Charizard's arms are short
-            and skinny compared to its robust belly, and each limb has three
-            white claws. It has stocky legs with cream-colored soles on each of
-            its plantigrade feet. The tip of its long, tapering tail burns with
-            a sizable flame.
-          </p>
-        </div>
-        <div class="child-div">
-          <h3 class="pokemonType">Squirtle #007</h3>
-          <img class="pokemonImg" src="../Images/squirtle.png" alt="Squirtle" />
-          <p>
-            This is a Water-type Pokémon introduced in Generation I. It evolves
-            into Wartortle starting at level 16, which evolves into Blastoise
-            starting at level 36. Squirtle is a small reptilian Pokémon that
-            resembles a light-blue turtle. While it typically walks on its two
-            short legs, it has been shown to run on all fours in Super Smash
-            Bros. Brawl. It has large, purplish or reddish eyes and a slightly
-            hooked upper lip. Each of its hands and feet have three pointed
-            digits. The end of its long tail curls inward. Its body is encased
-            by a tough shell that forms and hardens after birth. This shell is
-            brown on the top, pale yellow on the bottom, and has a thick white
-            ridge between the two halves.
-          </p>
-        </div>
-
-        <div class="child-div">
-          <h3 class="pokemonType">Wartortle #008</h3>
-          <img
-            class="pokemonImg"
-            src="../Images/wartortle.png"
-            alt="Wartortle"
-          />
-          <p>
-            This is a Water-type Pokémon introduced in Generation I. It evolves
-            from Squirtle starting at level 16 and evolves into Blastoise
-            starting at level 36. Wartortle is a bipedal, indigo reptilian
-            Pokémon similar to a turtle. It has brown eyes, a dark blue streak
-            on each cheek, and two sharp teeth protruding from its upper jaw. It
-            has three clawed fingers and pointed toes. On each side of its head
-            are feather-like ears covered in pale blue fur. A brown shell with a
-            pale yellow underside encases its body. A thick, white rim separates
-            the upper and lower halves of the shell. An older Wartortle may have
-            scars and algae growing on its shell. Poking out of the bottom of
-            the shell is a thick, wavy tail that also has light blue fur and
-            cannot be fully withdrawn into its shell. Its tail fur will darken
-            with age. Its tail is a popular symbol of longevity and good luck,
-            making this Pokémon popular with the elderly.
-          </p>
-        </div>
-
-        <div class="child-div">
-          <h3 class="pokemonType">Blastoise #009</h3>
-          <img
-            class="pokemonImg"
-            src="../Images/blastoise.png"
-            alt="Blastoise"
-          />
-          <p>
-            This is a Water-type Pokémon introduced in Generation I. It evolves
-            from Wartortle starting at level 36. It is the final form of
-            Squirtle. Blastoise is a large, bipedal turtle Pokémon. Its body is
-            blue and is mostly hidden by its tough, brown shell. This shell has
-            a cream-colored underside and a white ridge encircling its arms and
-            separating the upper and lower halves. Two powerful water cannons
-            reside at the top of its shell over its shoulders. These cannons can
-            be extended or withdrawn. 
-          </p>
-        </div>
+      <div class="main-div-grid" id="pokemonid">
+        
       </div>
     </main>
     <!-- Footer -->
@@ -299,11 +137,11 @@
       <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <a href="../index.html" class="nav-link px-2 text-muted">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="../Pages/pokedex.html" class="nav-link px-2 text-muted">Pokedex</a>
-          </li>
-          <li class="nav-item">
+        </li>
+        <li class="nav-item">
+          <a href="../Pages/pokedex.html" class="nav-link px-2 text-muted">Pokedex</a>
+        </li>
+        <li class="nav-item">
             <a href="../Pages/news.html" class="nav-link px-2 text-muted">News</a>
           </li>
           <li class="nav-item">

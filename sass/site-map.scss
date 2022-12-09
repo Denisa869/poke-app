@@ -1,58 +1,67 @@
 @charset "UTF-8";
 
-* { margin:0;padding:0;}
-body {height:100%;
-margin-top:50px;
-font-family: "Helvetica",Helvetica Neu, Arial, sans-serif;  
-font-size: 65.2%;
-color: #eeeff0;
-background-color: #0064a5;
+* {
+  margin: 0;
+  padding: 0;
 }
-.wrapper{
-    width:90%;
-    max-width:1200px;margin:0 auto;
-    clear:both;
+body {
+  margin-top: 50px;
+  font-family: "Helvetica", Helvetica Neu, Arial, sans-serif;
+  font-size: 65.2%;
+  color: #eeeff0;
+  background-color: #0064a5;
+}
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  clear: both;
 }
 
 /*/////// Navigation ///////*/
 #navigation h1 {
-    font-size:18px;  
-    font-weight:400;
-    margin-bottom:20px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 #navigation {
-	position: relative;
-	/*margin-top: 300px;*/
-	float: left;
-    background:transparent;
-    margin:0 1% 0 1% ;
-
+  position: relative;
+  /*margin-top: 300px;*/
+  float: left;
+  background: transparent;
+  margin: 0 1% 0 1%;
 }
-#navigation,#navlist{
-    min-width:300px;
-    width:220px;margin:15px;
+#navigation,
+#navlist {
+  min-width: 300px;
+  width: 220px;
+  margin: 15px;
 }
 
 #navlist li {
-    font-size:1.4em;
-    font-weight:300;
-    line-height:160%;
-	display: block;
-	text-decoration: none;
-	padding:5px 0 5px 0;
-	list-style: none;
-	border-bottom: 1px solid #e0e0e0;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 160%;
+  display: block;
+  text-decoration: none;
+  padding: 5px 0 5px 0;
+  list-style: none;
+  border-bottom: 1px solid #e0e0e0;
 }
-#navlist li:last-child{border:none;}
-#navlist li a {text-decoration:none;color:#444;}
+#navlist li:last-child {
+  border: none;
+}
+#navlist li a {
+  text-decoration: none;
+  color: #444;
+}
 /*#navlist li a:hover {}*/
 
-#navlist li a{
-    font-weight:300!important;
+#navlist li a {
+  font-weight: 300 !important;
 }
-#navlist li:after{
-content:'\f105'!important;font-family:"font awesome"!important;
-float:right;}
-
-
-
+#navlist li:after {
+  content: "\f105" !important;
+  font-family: "font awesome" !important;
+  float: right;
+}

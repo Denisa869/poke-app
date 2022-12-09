@@ -7,6 +7,7 @@
   font-family: var(--fontFamily);
   background-image: url("../Images/backgroundImage2.jpg");
   background-position: right center;
+  background-attachment: fixed;
 }
 
 .main-div-grid {
@@ -65,7 +66,7 @@
   margin: auto;
 }
 .main-div-grid-about .child-div {
-  display: table-cell;
+  display: grid;
   padding: 16px;
   border: 1px solid #226666;
   border-left: 10px solid #ccc;
@@ -167,8 +168,36 @@ main h2 {
 main h2 {
   color: darkkhaki;
 }
-main .main-div-grid .child-div .pokemonType {
+main #searchInput {
+  width: 30%;
+  margin: 0 auto;
+}
+main .main-div-grid {
+  display: grid;
+  justify-items: center;
+}
+main .main-div-grid .pokeDiv {
+  min-width: 350px;
+  background-color: rgb(245, 245, 245);
+  display: grid;
+  padding: 16px;
+  margin: 5px;
+  position: relative;
+  max-width: 500px;
+}
+main .main-div-grid .pokeDiv .pokemonType {
   margin: 0px auto;
+}
+main .main-div-grid .pokeDiv .imgPokemon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+}
+main .main-div-grid .pokeDiv p {
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
 }
 main .main-div-grid-about {
   margin: 0px auto;
@@ -300,7 +329,6 @@ body .imgAbout {
 }
 
 body {
-  height: 100%;
   margin-top: 50px;
   font-family: "Helvetica", Helvetica Neu, Arial, sans-serif;
   font-size: 65.2%;
@@ -330,7 +358,8 @@ body {
   margin: 0 1% 0 1%;
 }
 
-#navigation, #navlist {
+#navigation,
+#navlist {
   min-width: 300px;
   width: 220px;
   margin: 15px;
@@ -365,4 +394,259 @@ body {
   content: "\f105" !important;
   font-family: "font awesome" !important;
   float: right;
+}
+
+.divGrass {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  border-radius: 3px;
+  line-height: 25px;
+  max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 38.4375%;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  background-color: #9bcc50;
+  color: #212121;
+}
+
+.divPoison {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  border-radius: 3px;
+  line-height: 25px;
+  max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 38.4375%;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  background-color: #b97fc9;
+  color: #fff;
+}
+
+.divFire {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  border-radius: 3px;
+  line-height: 25px;
+  max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 38.4375%;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  background-color: #fd7d24;
+  color: #fff;
+}
+
+.divFlying {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  border-radius: 3px;
+  line-height: 25px;
+  max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 38.4375%;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+  background-color: #3dc7ef;
+  color: #212121;
+}
+
+.divWater {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  border-radius: 3px;
+  line-height: 25px;
+  max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 38.4375%;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  background-color: #4592c4;
+  color: #fff;
+}
+
+.divBug {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  border-radius: 3px;
+  line-height: 25px;
+  max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 38.4375%;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  background-color: #729f3f;
+  color: #fff;
+}
+
+.divNormal {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  border-radius: 3px;
+  line-height: 25px;
+  max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 38.4375%;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
+}
+
+.divFairy {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  border-radius: 3px;
+  line-height: 25px;
+  max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 38.4375%;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  background-color: rgba(255, 221, 187, 0.6);
+  color: #212121;
+}
+
+.divGround {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  border-radius: 3px;
+  line-height: 25px;
+  max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 38.4375%;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+  background-color: #f7de3f;
+  color: #212121;
+}
+
+.divFighting {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  border-radius: 3px;
+  line-height: 25px;
+  max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 38.4375%;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  background-color: #d56723;
+  color: #fff;
+}
+
+.divPsychic {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  border-radius: 3px;
+  line-height: 25px;
+  max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 38.4375%;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  background-color: #f366b9;
+  color: #fff;
+}
+
+.divRock {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  border-radius: 3px;
+  line-height: 25px;
+  max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 38.4375%;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  background-color: #a38c21;
+  color: #fff;
+}
+
+.divIce {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  border-radius: 3px;
+  line-height: 25px;
+  max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 38.4375%;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  background-color: #51c4e7;
+  color: #212121;
+}
+
+.divElectric {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  border-radius: 3px;
+  line-height: 25px;
+  max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 38.4375%;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  background-color: #eed535;
+  color: #212121;
+}
+
+.divDragon {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  border-radius: 3px;
+  line-height: 25px;
+  max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 38.4375%;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+  background-color: #53a4cf;
+  color: #fff;
+}
+
+.divSteel {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  border-radius: 3px;
+  line-height: 25px;
+  max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 38.4375%;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  background-color: #9eb7b8;
+  color: #212121;
+}
+
+.divDark {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  border-radius: 3px;
+  line-height: 25px;
+  max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 38.4375%;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  background-color: #707070;
+  color: #fff;
+}
+
+.divGhost {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  border-radius: 3px;
+  line-height: 25px;
+  max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 38.4375%;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  background-color: #7b62a3;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

@@ -52,7 +52,7 @@
     margin: auto;
 
     .child-div {
-        display: table-cell;
+        display: grid;
         padding: 16px;
         border: $borderColor;
         border-left: $borderLeftColor;

@@ -19,19 +19,43 @@ main {
     h2 {
     color: $fontH2Color;
     }
-
+    #searchInput {
+        width: 30%;
+        margin: 0 auto;
+    }
     .main-div-grid {
-        .child-div {
-            .pokemonType {
+        display: grid;
+        justify-items: center;
+        .pokeDiv {
+            min-width: 350px;
+            background-color: rgb(245, 245, 245);
+            display: grid;
+            padding: 16px;
+            margin: 5px;
+            position: relative;
+            max-width: 500px;
+            .pokemonType  {
                 margin: 0px auto;
             }
+            .imgPokemon {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 65%;
+            }
+            p {
+                text-align: left;
+                margin: 0px;
+                padding: 0px;
+            }
+            
         }
     }
 
     .main-div-grid-about {
         margin: 0px auto;
         .child-div {
-            .photo1 {
+            .photo1  {
                 width: 20%;
                 height: 20%;
             }
