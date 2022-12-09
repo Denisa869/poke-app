@@ -8,10 +8,13 @@ formPokedex.addEventListener("submit", (e) => {
 
   for (child of pokemonID.children) {
     const name = child.children[1].children[1].innerText;
-    if (name.toUpperCase() !== value.toUpperCase()) {
-      child.style.display = "none";
-    } else {
+    if (name.toUpperCase() == value.toUpperCase() && value !== '') {
+      console.log('llegó al if ')
       child.style.display = "grid";
+    } else {
+      console.log('llegó ')
+      swal("Error", "Pokémon not found", 'error')  
+      child.style.display = "none";
     }
     if (value === "") {
       child.style.display = "grid";
@@ -116,3 +119,4 @@ async function fetchPokeAPI() {
 }
 
 fetchPokeAPI();
+
